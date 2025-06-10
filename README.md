@@ -1,6 +1,6 @@
 Ka/Ks Batch Processing Script
 Overview
-This Python script automates the calculation of Ka/K规则
+This Python script automates the calculation of Ka/Ks
 Prerequisites
 
 Python 3.6+
@@ -19,7 +19,7 @@ Install dependencies via:pip install biopython pandas seaborn matplotlib tqdm
 
 Installation
 
-Clone this repository:git clone https://github.com/yourusername/kaks-batch-processor.git
+Clone this repository:git clone https://github.com/MrGhost-Aymen/Ka-Ks.git
 
 
 Place the KaKs_Calculator3.0 executable in a directory (e.g., bin/ within the project).
@@ -31,7 +31,7 @@ python kaks_batch.py --input_dir "path/to/aligned/fasta" --output_dir "path/to/r
 
 Command-Line Arguments
 
---kaks_path: Path to KaKs_Calculator executable (default: C:\Users\moi\Desktop\Bioinfo_tool\KaKs_Calculator3.0\bin\KaKs.exe)
+--kaks_path: Path to KaKs_Calculator executable (default: C:\Users\xxx\Desktop\Bioinfo_tool\KaKs_Calculator3.0\bin\KaKs.exe)
 --input_dir: Directory containing aligned FASTA files (.fasta or .fa)
 --output_dir: Directory for output files (CSV, JSON, plots)
 --method: Ka/Ks calculation method (e.g., NG, YN, MYN, default: YN)
@@ -65,7 +65,7 @@ Intermediate files (AXT, KaKs output) are saved if --save_intermediates is True,
 Adjust --max_sequences to avoid combinatorial explosion for large alignments.
 
 Example
-python kaks_batch.py --input_dir "C:\Users\moi\Desktop\Ifranensis Project\KA_KS\plastome\shared_genes_fasta\aligned" --output_dir "C:\Users\moi\Desktop\Ifranensis Project\KA_KS\plastome\results" --method YN --codon_table 11
+python kaks_batch.py --input_dir "C:\Users\xxx\Desktop\KA_KS\plastome\shared_genes_fasta\aligned" --output_dir "C:\Users\moi\Desktop\KA_KS\plastome\results" --method YN --codon_table 11
 
 Troubleshooting
 
@@ -79,4 +79,4 @@ MIT License - feel free to use, modify, and distribute this script.
 Contributing
 Pull requests and issues are welcome! Please test changes and update this README if needed.
 Contact
-For questions, open an issue on GitHub or contact your.email@example.com.
+For questions, open an issue on GitHub or contact ouamoa@gmail.com.
